@@ -6,7 +6,7 @@ const FULL_HEART = '♥'
 
 function hideErrorModal() {
   const modal = document.querySelector('#modal');
-  modal.classList.add("hidden")
+  modal.classList.toggle("hidden")
 }
 hideErrorModal();
 
