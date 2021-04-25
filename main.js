@@ -34,7 +34,7 @@ function like(node) {
 function mimicServerCall(url="http://mimicServer.example.com", config={}) {
   return new Promise(function(resolve, reject) {
     setTimeout(function() {
-      let isRandomFailure = Math.random() < .2
+      let isRandomFailure = Math.random() < .8
       if (isRandomFailure) {
         reject("Random server error. Try again.");
       } else {
