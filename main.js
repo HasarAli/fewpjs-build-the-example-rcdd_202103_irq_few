@@ -4,8 +4,16 @@ const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
 
+function hideErrorModal() {
+  const modal = document.querySelector('#modal');
+  modal.classList.add("hidden")
+}
+hideErrorModal();
 
-
+window.addEventListener('click', e => {
+  if (e.target.textContent === EMPTY_HEART)
+    like(e.target);
+})
 
 //------------------------------------------------------------------------------
 // Don't change the code below: this function mocks the server response
