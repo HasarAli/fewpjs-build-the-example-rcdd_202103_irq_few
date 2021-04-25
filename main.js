@@ -23,7 +23,7 @@ function like(node) {
     })
     .catch(err => {
       toggleErrorModal();
-      
+      window.setTimeout(toggleErrorModal, 3000);
     });
 }
 
