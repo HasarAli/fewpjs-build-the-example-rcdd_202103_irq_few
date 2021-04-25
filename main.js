@@ -17,7 +17,7 @@ window.addEventListener('click', e => {
 
 function like(node) {
   mimicServerCall()
-    .then(response => console.log(response))
+    .then(() => node.innerText = FULL_HEART)
     .catch(err => console.log(err));
 }
 
