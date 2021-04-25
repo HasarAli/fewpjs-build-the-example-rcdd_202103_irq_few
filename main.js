@@ -17,8 +17,14 @@ window.addEventListener('click', e => {
 
 function like(node) {
   mimicServerCall()
-    .then(() => node.innerText = FULL_HEART)
-    .catch(err => console.log(err));
+    .then(() => {
+      node.innerText = FULL_HEART;
+      node.classList.add('activated-heart');
+    })
+    .catch(err => {
+      toggleErrorModal();
+      
+    });
 }
 
 //------------------------------------------------------------------------------
