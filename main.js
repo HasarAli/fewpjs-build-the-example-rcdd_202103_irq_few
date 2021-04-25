@@ -15,6 +15,12 @@ window.addEventListener('click', e => {
     like(e.target);
 })
 
+function like(node) {
+  mimicServerCall()
+    .then(response => console.log(response))
+    .catch(err => console.log(err));
+}
+
 //------------------------------------------------------------------------------
 // Don't change the code below: this function mocks the server response
 //------------------------------------------------------------------------------
