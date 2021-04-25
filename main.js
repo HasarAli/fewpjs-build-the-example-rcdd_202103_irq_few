@@ -4,11 +4,11 @@ const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
 
-function hideErrorModal() {
+function toggleErrorModal() {
   const modal = document.querySelector('#modal');
   modal.classList.toggle("hidden")
 }
-hideErrorModal();
+toggleErrorModal();
 
 window.addEventListener('click', e => {
   if (e.target.textContent === EMPTY_HEART)
